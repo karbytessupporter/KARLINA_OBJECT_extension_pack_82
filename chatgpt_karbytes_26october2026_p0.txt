@@ -23,3 +23,53 @@ Also verify whether or not every hyperlink on that micro-directory web page whos
 Finally, identify any discrepancies you notice while fulfilling this request.
 
 (This time favor constraining the response to in-conversation text only instead of generating a downloadable markdown file).
+
+ChatGPT:
+
+[Worked for 2m 55s]
+
+**All 28 raw-file links are correct and complete. One of the nine `(*)` links is broken.** I checked the live [micro-directory](https://karlinarayberinger.github.io/KARLINA_OBJECT_extension_pack_82/) against the repository on 26 October 2026.
+
+The raw-file audit passed every check:
+
+- The repository contains **28 files**, and every file has exactly one corresponding raw-file hyperlink.
+
+- Every raw-file hyperlink displays its **complete destination URL**, with visible text exactly matching its `href`.
+
+- All 28 URLs returned **HTTP 200**, and each downloaded file’s Git hash matched its repository file.
+
+- There are **no missing files, duplicate raw-file links, or links to nonexistent repository files**.
+
+- The live micro-directory’s HTML matches the repository’s `index.html` exactly.
+
+The nine parenthesized-asterisk links produced these results:
+
+[preformatted_text]
+
+| File beside the `(*)` link | Result |
+|---|---|
+| `new_macro-directory_page_0.html` | Correct |
+| `new_macro-directory_page_1.html` | Correct |
+| `raw_github_files_directory_KARLINA_OBJECT_extension_pack_81.html` | Correct |
+| `raw_github_files_directory_KARBYTES_ULTIMATE_ARCHIVE.html` | Correct; intentionally points into pack 80 |
+| `unlisted_web_page_karbytes_social_media_posts_koep82.html` | **Incorrect; HTTP 404** |
+| `unlisted_web_page_karbytes_wayback_machine_saves_precision_batches_extension_0.html` | Correct |
+| `unlisted_web_page_karbytes_wayback_machine_saves_precision_batches_extension_1.html` | Correct |
+| `unlisted_web_page_karbytes_wayback_machine_saves_precision_batches_index.html` | Correct |
+| `unlisted_web_page_mdisc_karbytes2026_9.html` | Correct |
+
+[end preformatted_text]
+
+All eight correct destinations returned HTTP 200 and served HTML **identical, byte for byte**, to their corresponding source files in pack 82.
+
+The broken social-media `(*)` link uses `KARLINA_OBJECT_extension_pack_81` where it should use `KARLINA_OBJECT_extension_pack_82`. Its correct destination is:
+
+[https://karlinarayberinger.github.io/KARLINA_OBJECT_extension_pack_82/unlisted_web_page_karbytes_social_media_posts_koep82.html](https://karlinarayberinger.github.io/KARLINA_OBJECT_extension_pack_82/unlisted_web_page_karbytes_social_media_posts_koep82.html)
+
+I verified that this corrected URL returns HTTP 200 and serves HTML identical to the corresponding repository file. The adjacent **raw-file link is already correct**.
+
+I also noticed two minor discrepancies in `index.html`:
+
+- **Ordering:** The page says its list follows repository file order, but entries 21 and 22 are reversed. `raw_github_files_directory_KARBYTES_ULTIMATE_ARCHIVE.html` precedes `raw_github_files_directory_KARLINA_OBJECT_extension_pack_81.html` in the repository’s filename order.
+
+- **Stale HTML comment:** The comment explaining the archive micro-directory’s intentional pack-80 destination says “instead of” pack **81**. On this pack-82 page, that reference should presumably say pack **82**. The destination itself is correct.
