@@ -52,7 +52,7 @@ file_21: KARLINA_OBJECT_extension_pack_72-main.zip // SHA-256: 8fa27ba37c9c8f1df
 
 file_22: KARBYTES_FOR_LIFE_BLOG-main.zip // SHA-256: 182d069e6f26f9b66d0ce1e0aa759dd1f25443762d3684567b56298dd48da6b1
 
-file_23: KARLINA_OBJECT_extension_pack_82-main_26october2026.zip // SHA-256: 2eb09072f18cb34e6860b74d56da91c95f40140cd435a20d0a15f5da98fd3ae7
+file_23: KARLINA_OBJECT_extension_pack_82-main_26october2026.zip // SHA-256: ba45071aff6e5c99e524887360ff39a007b397ebd1fd6f498710ab699ab07826
 
 file_24: KARLINA_OBJECT_extension_pack_70-main.zip // SHA-256: 9e2422944627be1bcd37d4afb581aa37b9733a34626f33ca2c55b4e213734ccd
 
