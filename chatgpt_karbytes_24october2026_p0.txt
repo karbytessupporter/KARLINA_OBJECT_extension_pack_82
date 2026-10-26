@@ -1,0 +1,187 @@
+/**
+ * file: chatgpt_karbytes_24october2026_p0.txt
+ * type: plain-text
+ * date: 24_OCTOBER_2026
+ * author: karbytes
+ * license: PUBLIC_DOMAIN
+ */
+
+The following is a plain-text transcript of a conversation between karbytes and ChatGPT 6.1 Sol (Max Effort) (Work Mode) which took place between 11:59PM Pacific Standard Time on 23_OCTOBER_2026 and 11:59PM Pacific Standard Time on 24_OCTOBER_2026.
+
+relevant_KARBYTES_files[0]: https://raw.githubusercontent.com/karlinarayberinger/KARLINA_OBJECT_extension_pack_80/main/chatgpt_karbytes_23october2026_p1.txt
+
+* * *
+
+karbytes:
+
+Examine the following micro-directory web page to determine whether or not each hyperlink which is supposed to link to a raw GitHub file inside of the GitHub repository named KARLINA_OBJECT_extension_pack_81 actually links to the correct file (and ensure that every file inside of that GitHub repository has a corresponding full-URL hyperlink on that micro-directory web page):
+
+https://karlinarayberinger.github.io/KARLINA_OBJECT_extension_pack_81/
+
+Also verify whether or not every hyperlink on that micro-directory web page whose visible text is simply an asterisk enclosed in parentheses links to the correct web page.
+
+Finally, identify any discrepancies you notice while fulfilling this request.
+
+(This time favor constraining the response to in-conversation text only instead of generating a downloadable markdown file).
+
+ChatGPT:
+
+[Worked for 2m 20s]
+
+The micro-directory is **not fully complete or correct**: I found **two broken raw-file links and one repository file missing from the directory**.
+
+I compared the [live micro-directory](https://karlinarayberinger.github.io/KARLINA_OBJECT_extension_pack_81/) with the complete `main` file tree of [@karlinarayberinger/KARLINA_OBJECT_extension_pack_81](https://github.com/karlinarayberinger/KARLINA_OBJECT_extension_pack_81/tree/main) on 24_OCTOBER_2026.
+
+[preformatted_text]
+
+| Check | Result |
+|---|---:|
+| Files in the repository | 25 |
+| Raw-file hyperlinks in the micro-directory | 26 |
+| Working raw-file hyperlinks | 24 |
+| Broken raw-file hyperlinks | 2 |
+| Repository files without a corresponding hyperlink | 1 |
+| `(*)` hyperlinks | 8—all reachable |
+
+[end preformatted_text]
+
+All **24 working raw-file links** returned HTTP 200, and their downloaded contents matched the corresponding repository files exactly. All **26 raw-file hyperlinks** display their complete destination URLs accurately. There are no duplicate raw-file entries.
+
+The three definite discrepancies are:
+
+1. **Missing directory entry:** [karbytes_ultimate_archive_updates.txt](https://raw.githubusercontent.com/karlinarayberinger/KARLINA_OBJECT_extension_pack_81/main/karbytes_ultimate_archive_updates.txt) exists in the repository and downloads successfully, but the micro-directory contains no corresponding hyperlink. The full URL to add is:
+
+[https://raw.githubusercontent.com/karlinarayberinger/KARLINA_OBJECT_extension_pack_81/main/karbytes_ultimate_archive_updates.txt](https://raw.githubusercontent.com/karlinarayberinger/KARLINA_OBJECT_extension_pack_81/main/karbytes_ultimate_archive_updates.txt)
+
+2. **Broken raw-file entry:** [mdisc_karbytes2026_9.txt](https://raw.githubusercontent.com/karlinarayberinger/KARLINA_OBJECT_extension_pack_81/main/mdisc_karbytes2026_9.txt) returns **HTTP 404**. No file with that name currently exists in this repository.
+
+3. **Broken raw-file entry:** [unlisted_web_page_karbytes_wayback_machine_saves_precision_batches_extension_1.html](https://raw.githubusercontent.com/karlinarayberinger/KARLINA_OBJECT_extension_pack_81/main/unlisted_web_page_karbytes_wayback_machine_saves_precision_batches_extension_1.html) returns **HTTP 404**. That file is also absent from the repository. Its adjacent `(*)` link works independently.
+
+Every `(*)` link reaches the appropriately named web page, with the following qualifications:
+
+[preformatted_text]
+
+| Associated item | Actual `(*)` destination | Verification |
+|---|---|---|
+| Macro-directory page 0 | [Ultimate Archive: page 0](https://karlinarayberinger.github.io/KARBYTES_ULTIMATE_ARCHIVE/new_macro-directory_page_0.html) | Correct; HTML matches the pack_81 source exactly. |
+| Macro-directory page 1 | [Ultimate Archive: page 1](https://karlinarayberinger.github.io/KARBYTES_ULTIMATE_ARCHIVE/new_macro-directory_page_1.html) | Correct page; newer than the pack_81 source copy. |
+| Ultimate Archive raw-file directory | [pack_80 copy](https://karlinarayberinger.github.io/KARLINA_OBJECT_extension_pack_80/raw_github_files_directory_KARBYTES_ULTIMATE_ARCHIVE.html) | Works; HTML matches the pack_81 source exactly. |
+| Social-media posts, koep81 | [pack_81 social-media page](https://karlinarayberinger.github.io/KARLINA_OBJECT_extension_pack_81/unlisted_web_page_karbytes_social_media_posts_koep81.html) | Correct; HTML matches exactly. |
+| Precision batches, extension 0 | [@karbytessupporter extension 0](https://karbytessupporter.github.io/karbytes_wayback_machine_saves_precision_batches_extension_0/) | Correct; HTML matches exactly. |
+| Precision batches, extension 1 | [@karbytessupporter extension 1](https://karbytessupporter.github.io/karbytes_wayback_machine_saves_precision_batches_extension_1/) | Correct live page; associated pack_81 raw file is missing. |
+| Precision batches, main index | [@karbytessupporter main index](https://karbytessupporter.github.io/karbytes_wayback_machine_saves_precision_batches/) | Correct; HTML matches exactly. |
+| M-DISC karbytes2026_9 | [pack_80 M-DISC page](https://karlinarayberinger.github.io/KARLINA_OBJECT_extension_pack_80/unlisted_web_page_mdisc_karbytes2026_9.html) | Works; HTML matches the pack_81 source exactly. |
+
+[end preformatted_text]
+
+Two additional differences deserve attention:
+
+- **Two asterisk links point to pack_80.** These are the Ultimate Archive raw-file directory and M-DISC page. Both currently deliver identical HTML to their pack_81 counterparts, so they are content-correct. If you intended the asterisks to open the pack_81 copies, those destinations should be changed. I verified that both pack_81 equivalents also return HTTP 200.
+
+- **The stored macro-directory page 1 is outdated relative to its asterisk destination.** The pack_81 raw copy is dated **15_OCTOBER_2026** and lacks `NEW_MACRO-DIRECTORY_ENTRIES[3]`. The linked live page is dated **24_OCTOBER_2026** and includes that entry, linking to extension pack 81.
+
+The repository’s `main` commit remained unchanged throughout the audit: `7488b2cfd77e63c4f2943f0c63d831d894796604`.
+
+karbytes:
+
+Examine the following micro-directory web page to determine whether or not each hyperlink which is supposed to link to a raw GitHub file inside of the GitHub repository named KARLINA_OBJECT_extension_pack_81 actually links to the correct file (and ensure that every file inside of that GitHub repository has a corresponding full-URL hyperlink on that micro-directory web page):
+
+https://karlinarayberinger.github.io/KARLINA_OBJECT_extension_pack_81/
+
+Also verify whether or not every hyperlink on that micro-directory web page whose visible text is simply an asterisk enclosed in parentheses links to the correct web page.
+
+Finally, identify any discrepancies you notice while fulfilling this request.
+
+(This time favor constraining the response to in-conversation text only instead of generating a downloadable markdown file).
+
+ChatGPT:
+
+[Worked for 1m 48s]
+
+The **raw-file portion now passes completely**. All repository files are represented correctly. One `(*)` link still opens an older version of its associated page.
+
+I checked the [live micro-directory](https://karlinarayberinger.github.io/KARLINA_OBJECT_extension_pack_81/) against [repository commit b94e607](https://github.com/karlinarayberinger/KARLINA_OBJECT_extension_pack_81/tree/b94e60772adf2e80342aeaccab3f0e982d79b918).
+
+[preformatted_text]
+
+| Check | Result |
+|---|---:|
+| Repository files | 27 |
+| Corresponding raw-file hyperlinks | 27 |
+| Raw URLs returning HTTP 200 | 27 |
+| Missing, broken, or duplicate raw-file entries | 0 |
+| Raw-link labels differing from their destination URLs | 0 |
+| `(*)` links returning HTTP 200 | 8 |
+
+[end preformatted_text]
+
+Every raw-file download matched its corresponding repository file exactly. The entries also follow the repository’s file order. **The three definite problems from the previous audit have been resolved.**
+
+The eight `(*)` links checked as follows:
+
+[preformatted_text]
+
+| Associated item | Actual destination | Result |
+|---|---|---|
+| Macro-directory page 0 | [Ultimate Archive: page 0](https://karlinarayberinger.github.io/KARBYTES_ULTIMATE_ARCHIVE/new_macro-directory_page_0.html) | Correct; identical HTML. |
+| Macro-directory page 1 | [Ultimate Archive: page 1](https://karlinarayberinger.github.io/KARBYTES_ULTIMATE_ARCHIVE/new_macro-directory_page_1.html) | Correct destination; newer than the stored source copy. |
+| Ultimate Archive raw-file directory | [pack_80 copy](https://karlinarayberinger.github.io/KARLINA_OBJECT_extension_pack_80/raw_github_files_directory_KARBYTES_ULTIMATE_ARCHIVE.html) | Correct content; identical to the pack_81 source. |
+| Social-media posts, koep81 | [pack_81 social-media page](https://karlinarayberinger.github.io/KARLINA_OBJECT_extension_pack_81/unlisted_web_page_karbytes_social_media_posts_koep81.html) | Correct; identical HTML. |
+| Precision batches, extension 0 | [@karbytessupporter extension 0](https://karbytessupporter.github.io/karbytes_wayback_machine_saves_precision_batches_extension_0/) | Correct; identical HTML. |
+| Precision batches, extension 1 | [@karbytessupporter extension 1](https://karbytessupporter.github.io/karbytes_wayback_machine_saves_precision_batches_extension_1/) | Correct; identical HTML. |
+| Precision batches, main index | [@karbytessupporter main index](https://karbytessupporter.github.io/karbytes_wayback_machine_saves_precision_batches/) | Correct; identical HTML. |
+| M-DISC karbytes2026_9 | [pack_80 M-DISC page](https://karlinarayberinger.github.io/KARLINA_OBJECT_extension_pack_80/unlisted_web_page_mdisc_karbytes2026_9.html) | **Opens an older version than the adjacent pack_81 raw source.** |
+
+[end preformatted_text]
+
+The remaining differences are:
+
+1. **M-DISC asterisk destination mismatch.** The linked pack_80 page lists **36 ZIP files**, while the pack_81 source lists **37**, including `KARLINA_OBJECT_extension_pack_81-main_24october2026.zip`. The pages also reference their respective pack_80 and pack_81 locations. To open the rendered counterpart of the adjacent pack_81 raw file, the asterisk should point to:
+
+[https://karlinarayberinger.github.io/KARLINA_OBJECT_extension_pack_81/unlisted_web_page_mdisc_karbytes2026_9.html](https://karlinarayberinger.github.io/KARLINA_OBJECT_extension_pack_81/unlisted_web_page_mdisc_karbytes2026_9.html)
+
+I verified that this URL returns HTTP 200 and matches the pack_81 source exactly.
+
+2. **Macro-directory page 1 version difference.** The pack_81 source copy remains dated **15_OCTOBER_2026** and lacks the pack_81 entry. Its asterisk correctly opens the live **24_OCTOBER_2026** version, which includes that entry. This is a snapshot difference, rather than a broken or misdirected hyperlink.
+
+3. **An incidental reference inside the pack_81 M-DISC page is inconsistent.** Its introduction identifies `NEW_MACRO-DIRECTORY_PAGE_0` as the enclosing macro-directory for pack_81. Pack_81 actually appears on **macro-directory page 1**, consistent with the micro-directory’s own directory-level metadata.
+
+karbytes:
+
+What I would like you to do now (just to be extra thorough with the interim auditing of the KARLINA_OBJECT_extension_pack_81 micro-directory) is the following...
+
+On the following web page, verify whether or not the sub-index pages whose index numbers are 283 to 284 contain all of the aforementioned hyperlinks with the one exception being that the links may appear in a different order than how they appear in the respective micro-directory surface (i.e. index.html) and each of the sub-index hyperlinks display the full URL they point to as their visible components:
+
+https://karbytessupporter.github.io/karbytes_wayback_machine_saves_precision_batches_extension_1/
+
+(This time favor constraining the response to in-conversation text only instead of generating a downloadable markdown file).
+
+ChatGPT:
+
+[Worked for 1m 48s]
+
+**URL coverage is complete, with one visible-label error.** Pages 283 and 284 collectively contain all **27 raw-file URLs** and all **8 `(*)` destination URLs** from the current pack_81 micro-directory.
+
+[preformatted_text]
+
+| Sub-index page | Raw-file URLs | `(*)` destinations | Micro-directory URL | Total |
+|---|---:|---:|---:|---:|
+| [283](https://karbytessupporter.github.io/karbytes_wayback_machine_saves_precision_batches_extension_1/sub-index_page_283.html) | 17 | 1 | 1 | 19 |
+| [284](https://karbytessupporter.github.io/karbytes_wayback_machine_saves_precision_batches_extension_1/sub-index_page_284.html) | 10 | 7 | 0 | 17 |
+| **Combined** | **27** | **8** | **1** | **36** |
+
+[end preformatted_text]
+
+I found **no missing, unexpected, duplicated, or altered destination URLs**. Both sub-index pages return HTTP 200 and are correctly linked under the pack_81 heading on the parent index. Page 283 also correctly places the micro-directory URL first.
+
+**35 of the 36 hyperlinks display exactly their destination URLs.** The exception is on **page 284**: the link to the rendered social-media-posts page has an extra double quotation mark at the end of its visible text:
+
+[preformatted_text]
+
+```text
+https://karlinarayberinger.github.io/KARLINA_OBJECT_extension_pack_81/unlisted_web_page_karbytes_social_media_posts_koep81.html"
+```
+
+[end preformatted_text]
+
+Its actual destination URL is correct. Remove only the trailing `"` from the anchor’s visible text to satisfy the exact full-URL display requirement.
