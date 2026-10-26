@@ -83,3 +83,37 @@ On the following web page, verify whether or not the sub-index pages whose index
 https://karbytessupporter.github.io/karbytes_wayback_machine_saves_precision_batches_extension_1/
 
 (This time favor constraining the response to in-conversation text only instead of generating a downloadable markdown file).
+
+ChatGPT:
+
+[Worked for 1m 54s]
+
+**Yes—sub-index pages 285 and 286 pass the requested audit.** I compared them with the current pack-82 micro-directory on 26 October 2026.
+
+[preformatted_text]
+
+| Sub-index page | Raw-file links | `(*)` destination links | Micro-directory surface link | Total |
+|---|---:|---:|---:|---:|
+| [285](https://karbytessupporter.github.io/karbytes_wayback_machine_saves_precision_batches_extension_1/sub-index_page_285.html) | 18 | 2 | 1 | 21 |
+| [286](https://karbytessupporter.github.io/karbytes_wayback_machine_saves_precision_batches_extension_1/sub-index_page_286.html) | 10 | 7 | 0 | 17 |
+| **Combined** | **28** | **9** | **1** | **38** |
+
+[end preformatted_text]
+
+I verified that:
+
+- **All 28 raw-file URLs and all nine `(*)` destinations appear exactly once.**
+
+- The micro-directory surface URL appears as the first link on page 285.
+
+- Every one of the **38 hyperlinks displays its complete destination URL**, exactly matching its `href`.
+
+- All 38 destinations returned **HTTP 200**, with no redirects.
+
+- The combined sequence also matches the current micro-directory’s sequence, although your request permits a different order.
+
+- The parent index correctly lists both pages under the pack-82 heading.
+
+**No missing, extra, duplicate, mislabeled, or broken links were found in these two sub-index pages.**
+
+The previously identified social-media `(*)` link is now corrected in the micro-directory. Page 286 includes the correct pack-82 destination, which also loads successfully.
